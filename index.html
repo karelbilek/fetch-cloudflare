@@ -1,0 +1,10 @@
+<script>
+'use strict';
+
+fetch('https://bitpay.com/api/rates').then(response => {
+  response.text().then(text => {
+    console.log({ok: response.ok, statusText: response.statusText, text: text});
+  });
+});
+console.log("kokoti")
+</script>
