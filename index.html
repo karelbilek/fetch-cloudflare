@@ -1,7 +1,7 @@
 <script>
 'use strict';
 
-fetch('https://bitpay.com/api/rates').then(response => {
+fetch('https://bitcoinfees.21.co/api/v1/fees/recommended').then(response => {
   response.text().then(text => {
     console.log({ok: response.ok, statusText: response.statusText, text: text});
   });
